@@ -1,9 +1,10 @@
+
 import os
 from ultralytics import YOLO
 from PIL import Image
 
 #Load trained model YOLOv11 after epoched - choose the best.pt
-model = YOLO('D:/VSCode/DCLP/main_code/runs/detect/train/weights/best.pt')
+model = YOLO(r"D:\VSCode/DCLP\main_code\runs/detect\train2/weights/best.pt")
 
 result = model('D:\VSCode\DCLP\dataset_train/test_image/4.jpg')
 

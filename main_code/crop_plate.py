@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load model đã train nhận diện biển số (đường dẫn file weights .pt)
-model = YOLO("D:\VSCode\DCLP\main_code/runs\detect/train\weights/best.pt")
+model = YOLO(r"D:\VSCode/DCLP\main_code\runs/detect\train2/weights/best.pt")
 
 # Đọc ảnh cần detect
 image = cv2.imread("D:\VSCode\DCLP\dataset_train/test_image/3.jpg")
