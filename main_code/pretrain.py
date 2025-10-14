@@ -13,7 +13,7 @@ if os.path.exists(train_dir):
 #Main code to train
 if __name__=="__main__":
     # Load a COCO-pretrained YOLO11n model
-    model = YOLO("yolo11m.pt")
+    model = YOLO("yolo12n.pt")
 
     # Train the model on the pretrain example dataset for 10 epochs
     results = model.train(
