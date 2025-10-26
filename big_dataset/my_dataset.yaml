@@ -1,19 +1,19 @@
-# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+# YOLO dataset configuration
+# Multi-dataset training: license plates, vehicles, people
 
-# DOTA8 dataset 8 images from split DOTAv1 dataset by Ultralytics
-# Documentation: https://docs.ultralytics.com/datasets/obb/dota8/
-# Example usage: yolo train model=yolov8n-obb.pt data=dota8.yaml
-# parent
-# ├── ultralytics
-# └── datasets
-#     └── dota8 ← downloads here (1MB)
+# Root path (not mandatory but useful for relative paths)
+path: D:/VSCode/DCLP/big_dataset/LP_detection
+# Training and validation data (can include multiple datasets)
+train: images/train
 
-# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: D:/VSCode/DCLP/dataset_train/LP_detection # dataset root dir
-train: images/train # train images (relative to 'path') 4 images
-val: images/val # val images (relative to 'path') 4 images
+val: images/val
 
-# Classes for DOTA 1.0
+# Classes
 names:
-  0: bien_so
-  
+ 0: car
+ 1: threewheel
+ 2: bus
+ 3: truck
+ 4: motorbike
+ 5: van
+ 6: bien_so
