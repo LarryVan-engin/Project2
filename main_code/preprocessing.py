@@ -1,6 +1,38 @@
+"""
+*******************************************************************************************************************
+General Information
+********************************************************************************************************************
+Project:       DETECT LICENSE PLATES AND TRAFFIC PENALTY INTERGRATION
+File:          preprocessing.py
+Description:   This file is used to pre-process cropped plate image before OCR in main_code.
+                This code is used as module import to main code
+
+Author:        LARRY PHONG TRUC
+Email:         vanphongtruc1808@gmail.com
+Created:       26/10/2025
+Last Update:   26/10
+Version:       1.0
+
+Python:        3.10.11
+Dependencies:  
+Copyright:     (c) 2025 IOE INNOVATION Team
+License:       [LICENSE_TYPE]
+
+Notes:         - Just using as module
+*******************************************************************************************************************
+"""
+
+#######################################################################################################################
+# Imports
+#######################################################################################################################
+# Standard library imports
 import cv2
 import os
 
+
+#######################################################################################################################
+# Module Functions
+#######################################################################################################################
 def preprocess_plate(input_path, output_path, target_w=200):
     img = cv2.imread(input_path)
     if img is None:
